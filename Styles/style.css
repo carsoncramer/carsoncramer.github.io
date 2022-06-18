@@ -1,0 +1,109 @@
+:root {
+    --primary: #409ba5
+}
+
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    width: 60pc;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    font-size: 25px;
+}
+.pic-and-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35pc;
+    margin: 0 auto;
+}
+
+.image-cropper {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.gh-graph {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+.gh-graph img {
+    width: 100%;
+}
+
+.line{
+    width: 60pc;
+    height: 1px;
+    border-bottom: 1px solid lightgray;
+    position: absolute;
+    margin-inline: auto;
+}
+
+.about-me{
+    padding-top: 20px;
+}
+
+a{
+    color: var(--primary);
+}
+
+.work-experience{
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.job-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.job {
+    text-align: justify;
+    width: 50pc;
+    padding-inline: 20px;
+}
+
+.job h3{
+    text-align: center;
+}
+
+#opticalImg {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+
+#fractylImg {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+.project-showcase{
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
