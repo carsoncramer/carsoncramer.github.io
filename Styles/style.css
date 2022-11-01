@@ -100,6 +100,12 @@ a {
   width: 200px;
   height: 200px;
 }
+#duganImg {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+}
 
 .project-showcase {
   padding-top: 20px;
