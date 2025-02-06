@@ -1,82 +1,226 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carson Cramer - HOME</title>
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carson Cramer - Personal Website & Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        Hey! I am still working on this site so it may be missing some functionality and content.
-    </div> 
-    <h1>Carson Cramer</h1>
-    <div class="pic-and-links">
-        <h2><a target="_blank" rel="noopener noreferrer" href="Images/CarsonCramerResumeV2.pdf">Resume</a></h2>
-        <div class="image-cropper">
-            <img src="Images/me.jpg" class="rounded" />
+  <main>
+    <div class="full-width-container">
+      <div class="decorative-sides left">
+      </div>
+      
+      <section class="content-section hero">
+        <div class="hero-left">
+          <div class="profile-container">
+            <div class="profile-ring"></div>
+            <img src="assets/gradphoto.png" alt="Carson Cramer" class="profile-image">
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/carsoncramer" target="_blank" aria-label="GitHub Profile">
+              <img src="assets/icons/icons8-github-50.png" alt="" class="social-icon github">
+            </a>
+            <a href="https://linkedin.com/in/carson-cramer" target="_blank" aria-label="LinkedIn Profile">
+              <img src="assets/icons/icons8-linkedin-96.png" alt="" class="social-icon linkedin">
+            </a>
+            <a href="https://twitter.com/carsoncramer_" target="_blank" aria-label="Twitter Profile">
+              <img src="assets/icons/icons8-twitterx-96.png" alt="" class="social-icon twitter">
+            </a>
+            <!--
+            <a href="https://scholar.google.com/citations?user=yourid" target="_blank" aria-label="Google Scholar Profile">
+              <img src="assets/icons/icons8-google-scholar-96.png" alt="" class="social-icon google-scholar">
+            </a>
+            <a href="https://news.ycombinator.com/user?id=yourusername" target="_blank" aria-label="Hacker News Profile">
+              <img src="assets/icons/icons8-hacker-news-96.png" alt="" class="social-icon hacker-news">
+            </a>
+            -->
+          </div>
         </div>
-        <h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/carsoncramer">GitHub</a></h2>
-    </div>
-    <div class="gh-graph">
-        <img src="https://ghchart.rshah.org/409ba5/carsoncramer" alt="Carson's GitHub Chart" />
-    </div>
-    <div class="line"></div>
-    <div class="about-me">
-        <h2>About Me:</h2>
-        <p>I am currently pursuing a Bachelor's and Master's degree in Computer Science at <a target="_blank" rel="noopener noreferrer" href="https://cs.mines.edu/">Colorado School of Mines</a> (Class of 2024). Before that I attended Legend High School (Class of 2020) where I was a multi-year state champion and national finalist at the <a target="_blank" rel="noopener noreferrer" href="https://tsaweb.org">Technology Student Association's</a> software development competition.</p>
-        <p>When I am not working on school and software, I am most likely hanging out with my <a target="_blank" rel="noopener noreferrer" href="https://www.minessae.org/">Sigma Alpha Epsilon</a> fraternity brothers or playing baseball for the <a target="_blank" rel="noopener noreferrer" href="https://minesathletics.com/sports/cbsb/schedule">Mines Club Baseball</a> team.</p>
-    </div>
-    <div class="line"></div>
-    <div class="work-experience">
-        <h2>Work Experience</h2>
-        <div class="job-container">
-            <div class="job">
-                <img src="Images/FractylLogo.png" alt="Fractyl Development Logo"  id="fractylImg">
-                <p>I spent 3 years working for <a target="_blank" rel="noopener noreferrer" href="https://fractyldev.com/">Fractyl Development</a>, a startup myself and three others created. I worked as our full-stack iOS developer. We brought three apps to market under our company, and built one for an external client. I worked almost entirely in Swift, and I used Google Cloud and Node.js for the server side.</p>
-            </div>
-            <div class="job">
-                <img src="Images/OpticalEnginesLogo.png" alt="Optical Engines Logo" id="opticalImg"/>
-                <p>This summer, I interned at <a target="_blank" rel="noopener noreferrer" href="https://opticalenginesinc.com/">Optical Engines</a>, a laser research and development company. I built laser calibration software to fit the needs of the optics researchers and engineers. I used C++ and C# with WPF on this project. I also added features to their in-house CRM software using React and Python.</p>
-            </div>
-            <div class="job">
-                <img src="Images/DuganDentistLogo.png" alt="Dugan Dentistry Logo" id="duganImg"/>
-                <p>Right now I am working at <strong>Dugan Dentistry</strong>. I am leading a team of two other developers to build an image-processing app for dentists to use with their patients. I am using Swift for this project.</p>
-            </div>
+        
+        <div class="hero-right">
+          <h1>Carson Cramer</h1>
+          <h2>Computer Scientist & Researcher</h2>
+          <div class="about-text">
+            <p>I am a PhD student at Colorado School of Mines, working at Aria Robotics as a graduate researcher focusing on Simultaneous Localization and Mapping (SLAM).</p>
+          </div>
+          <nav class="hero-nav">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
         </div>
+      </section>
+
+      <div class="decorative-sides right">
+      </div>
     </div>
-    <div class="line"></div>
-    <div class="project-showcase">
-        <h2>Selected Projects</h2>
-        <div class="project">
-            <img src="Images/CYALogo.png"/>
-            <div class="project-content">
-                <h3>Cover Your Apps</h3>
-                <h5>Swift, Node.js, Firebase</h5>
-                <p>Cover Your Apps is a Venmo-esque iOS app for quickly sending contracts between its users. It enabled users to keep track of lent items, send recipts for cash transations, and quickly use liability waivers. (This was built to a clients specifications)</p>
+
+    <div class="full-width-container">
+      <div class="decorative-sides left">
+        <img src="assets/Blaster.png" alt="Blaster" class="blaster">
+        <img src="assets/mines-snowy.jpg" alt="Snowy Mines Campus" class="mines-campus">
+      </div>
+      
+      <section class="content-section">
+        <h2>Education</h2>
+        
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Ph.D. in Computer Science</h3>
+              <p class="timeline-subtitle">Colorado School of Mines</p>
+              <p class="timeline-location">GPA: 4.0</p>
+              <div class="certificate" onmouseover="showCertificateModal(event, 'icr-modal')" onmouseout="hideCertificateModal()">
+                <i class="fas fa-shield-alt"></i>
+                ICR, Inc. C-MAPP Research Scholar
+                <div id="icr-modal" class="certificate-modal">
+                  <h4>ICR, Inc. C-MAPP Research Scholar</h4>
+                  <p>Selected as one of four C-MAPP Research Scholars for the 2024-2025 academic year, sponsored by ICR, Inc.</p>
+                </div>
+              </div>
             </div>
-            
+            <span class="timeline-date">Aug. 2024 -- Present</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Simultaneous Localization and Mapping (SLAM) research focus</li>
+            <li>Developing monocular SLAM systems and outlier-aware data fusion algorithms</li>
+            <li>TA for CSCI 507: Computer Vision & CSCI 598A: Robot Mapping and Localization</li>
+            <li>Managing more than 15 undergraduate and graduate researchers</li>
+          </ul>
         </div>
-        <div class="project">
-            <img src="Images/customPinTriple.png"/>
-            <div class="project-content">
-                <h3>Waypoint Communication</h3>
-                <h5>Swift, Node.js, Firebase</h5>
-                <p>Waypoint Communication is a location based social media app that facilitates connections between users in the real world by acting as a live map where you can see what is happening all around you. Users can drop "pins" on their location to invite people to a pick-up basketball game, a festival, or to show off a cool picture of wildlife. The possibilities are endless.  <a href="http://waypoint.fractyldev.com/index.html">Check it out!</a></p>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">M.S. Computer Science</h3>
+              <p class="timeline-subtitle">Colorado School of Mines</p>
+              <p class="timeline-location">GPA: 3.93</p>
+              <div class="certificate" onmouseover="showCertificateModal(event, 'nsa-modal')" onmouseout="hideCertificateModal()">
+                <i class="fas fa-shield-alt"></i>
+                NSA Cyber Defense Certification
+                <div id="nsa-modal" class="certificate-modal">
+                  <h4>NSA Cyber Defense Certification</h4>
+                  <p>National Security Agency-validated certification in cyber defense and security practices, demonstrating expertise in protecting systems and networks.</p>
+                </div>
+              </div>
             </div>
-            
+            <span class="timeline-date">Aug. 2023 -- May 2024</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Focus Area: Machine Learning</li>
+          </ul>
         </div>
-        <div class="project">
-            <img src="Images/TheMorseProjectLogo.webp"/>
-            <div class="project-content">
-                <h3>The Morse Project</h3>
-                <h5>Java</h5>
-                <p>The Morse Project turns your phone into a Morse Code receiver. Any messages sent to you will automatically be vibrated into Morse Code, so that you and only you can understand what your texts say, without the hassle of pulling out your phone. Initially built to assist the blind, after getting 2,000+ downloads in the first weeks we realized this app benefits everyone who wants to "read" their texts without ever pulling out their phone. The app also includes tools to teach yourself Morse code so anyone can use the app.  <a href="https://fractyldev.com/morse/about.html">Check it out!</a> </p>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">B.S. Computer Science</h3>
+              <p class="timeline-subtitle">Colorado School of Mines</p>
             </div>
-            
+            <span class="timeline-date">Aug. 2020 -- May 2023</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Sigma Alpha Epsilon Fraternity</li>
+            <li>Club Baseball</li>
+          </ul>
         </div>
+      </section>
+
+      <div class="decorative-sides right">
+        <img src="assets/Mines-triangle-white.png" alt="Mines logo" class="blaster">
+        <img src="assets/mines-campus.jpg" alt="Mines Campus" class="mines-campus">
+      </div>
     </div>
+
+    <div class="full-width-container">
+      <div class="decorative-sides left">
+        <img src="assets/TOA-Logo.png" alt="Ten One Aerospace Logo" class="toa-logo">
+        <img src="assets/aria-logo.png" alt="Aria Robotics Logo" class="aria-logo">
+      </div>
+      
+      <section class="content-section">
+        <h2>Experience</h2>
+        
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Ten One Aerospace</h3>
+              <p class="timeline-subtitle">Computer Scientist</p>
+              <p class="timeline-location">Remote</p>
+            </div>
+            <span class="timeline-date">May 2023 -- Present</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Conducted radiometric analysis on camera performance degradation and mitigation in orbital environments</li>
+            <li>Engineered machine vision systems for RPOD missions</li>
+            <li>Developed satellite flight software</li>
+            <li>Created a dynamic web application, API, and CLI for managing flight software applications</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Aria Robotics</h3>
+              <p class="timeline-subtitle">Researcher</p>
+              <p class="timeline-location">Golden, Colorado</p>
+            </div>
+            <span class="timeline-date">August 2024 -- Present</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Simultaneous Localization and Mapping (SLAM) researcher</li>
+            <li>Managing more than 30 undergraduate and graduate researchers</li>
+            <li>Developing outlier-aware data fusion algorithms</li>
+            <li>Conducting monocular SLAM robustness and performance degradation analysis</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Optical Engines Inc.</h3>
+              <p class="timeline-subtitle">Software Engineering Intern</p>
+              <p class="timeline-location">Colorado Springs, CO</p>
+            </div>
+            <span class="timeline-date">May 2022 -- Aug 2022</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Engineered laser calibration software</li>
+            <li>Extended functionality of in-house CRM webapp</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-title">Fractyl Development, LLC</h3>
+              <p class="timeline-subtitle">Co-Founder, Lead iOS Developer</p>
+              <p class="timeline-location">Parker, CO</p>
+            </div>
+            <span class="timeline-date">Nov 2017 -- Dec 2021</span>
+          </div>
+          <ul class="bullet-list">
+            <li>Led a team in developing multiple iOS and Android apps</li>
+            <li>Placed in a national software development competition and three first-place finishes at state-wide software development competitions</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="decorative-sides right">
+        <img src="assets/optical-engines-logo.webp" alt="Optical Engines Logo" class="oe-logo">
+        <img src="assets/fractyl-dev-logo.png" alt="Fractyl-Dev Logo" class="fd-logo">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Carson Cramer. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
