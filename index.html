@@ -5,253 +5,334 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carson Cramer</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="circuit-bg">
+    <svg class="circuit-lines" viewBox="0 0 1000 800" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="neon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.8" />
+          <stop offset="50%" style="stop-color:#bf00ff;stop-opacity:0.8" />
+          <stop offset="100%" style="stop-color:#00f5ff;stop-opacity:0.8" />
+        </linearGradient>
+      </defs>
+      <path class="circuit-path" d="M0,100 H200 V200 H400 V100 H600 V300 H800 V100 H1000" />
+      <path class="circuit-path" d="M0,400 H150 V500 H350 V400 H550 V600 H750 V400 H1000" />
+      <path class="circuit-path" d="M0,700 H250 V600 H450 V700 H650 V500 H850 V700 H1000" />
+    </svg>
+    <div class="grid-dots"></div>
+  </div>
+
   <main>
-    <div class="full-width-container">
-      <div class="decorative-sides left">
-      </div>
-      
-      <section class="content-section hero">
-        <div class="hero-left">
-          <div class="profile-container">
-            <div class="profile-ring"></div>
-            <img src="assets/gradphoto.png" alt="Carson Cramer" class="profile-image">
+    <section class="hero-circuit">
+      <div class="hero-frame">
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+
+        <div class="hero-inner">
+          <div class="hero-left">
+            <div class="profile-node">
+              <div class="node-ring outer"></div>
+              <div class="node-ring inner"></div>
+              <img src="assets/gradphoto.png" alt="Carson Cramer" class="profile-image">
+              <div class="pulse-ring"></div>
+            </div>
+            <div class="connection-links">
+              <a href="https://github.com/carsoncramer" target="_blank" class="link-node">
+                <span class="node-icon">◈</span>
+                <span class="node-text">GitHub</span>
+                <span class="node-line"></span>
+              </a>
+              <a href="https://linkedin.com/in/carson-cramer" target="_blank" class="link-node">
+                <span class="node-icon">◈</span>
+                <span class="node-text">LinkedIn</span>
+                <span class="node-line"></span>
+              </a>
+              <a href="https://twitter.com/carsoncramer_" target="_blank" class="link-node">
+                <span class="node-icon">◈</span>
+                <span class="node-text">X</span>
+                <span class="node-line"></span>
+              </a>
+            </div>
           </div>
-          <div class="social-links">
-            <a href="https://github.com/carsoncramer" target="_blank" aria-label="GitHub Profile">
-              <img src="assets/icons/icons8-github-50.png" alt="" class="social-icon github">
-            </a>
-            <a href="https://linkedin.com/in/carson-cramer" target="_blank" aria-label="LinkedIn Profile">
-              <img src="assets/icons/icons8-linkedin-96.png" alt="" class="social-icon linkedin">
-            </a>
-            <a href="https://twitter.com/carsoncramer_" target="_blank" aria-label="Twitter Profile">
-              <img src="assets/icons/icons8-twitterx-96.png" alt="" class="social-icon twitter">
-            </a>
-            <!--
-            <a href="https://scholar.google.com/citations?user=yourid" target="_blank" aria-label="Google Scholar Profile">
-              <img src="assets/icons/icons8-google-scholar-96.png" alt="" class="social-icon google-scholar">
-            </a>
-            <a href="https://news.ycombinator.com/user?id=yourusername" target="_blank" aria-label="Hacker News Profile">
-              <img src="assets/icons/icons8-hacker-news-96.png" alt="" class="social-icon hacker-news">
-            </a>
-            -->
-          </div>
+
+          <div class="hero-right">
+            <div class="title-display">
+              <div class="glitch-container">
+                <h1 class="glitch-text" data-text="CARSON CRAMER">CARSON CRAMER</h1>
+              </div>
+              <div class="title-underline"></div>
+            </div>
+            <div class="role-display">
+              <div class="role-line">
+                <span class="role-prefix">//</span>
+                <span class="role-text">CS PhD Student @ Mines</span>
+              </div>
+              <div class="role-line">
+                <span class="role-prefix">//</span>
+                <span class="role-text">Perception Engineer @ Ten One Aerospace</span>
+              </div>
+            </div>
+            <div class="bio-container">
+              <div class="bio-label">
+                <span class="label-bracket">[</span>
+                <span>BIO</span>
+                <span class="label-bracket">]</span>
+              </div>
+              <p class="bio-text">I build perception and autonomy systems for robots and spacecraft. My PhD research at Colorado School of Mines focuses on SLAM algorithms at Aria Robotics, while at Ten One Aerospace I engineer the computer vision systems that enable satellites to autonomously rendezvous in orbit, tackling calibration, simulation, and pose-estimation challenges.</p>
+            </div>
+                      </div>
         </div>
-        
-        <div class="hero-right">
-          <h1>Carson Cramer</h1>
-          <h2>CS PhD Student @ Mines</h2>
-          <h2>Perception Engineer @ Ten One Aerospace</h2>
-          <div class="about-text">
-            <p>I am a PhD student at Colorado School of Mines, working at Aria Robotics as a doctoral researcher focusing on Simultaneous Localization and Mapping (SLAM). I also work at Ten One Aerospace as a Perception Engineer, where I leverage cutting-edge research to solve calibration, simulation, and pose-estimation problems to enable autonomous satellite RPOD missions.</p>
+      </div>
+    </section>
+
+    <div class="two-column-grid">
+      <section class="data-circuit">
+        <div class="section-label">
+          <span class="label-icon">◇</span>
+          <h2>EDUCATION</h2>
+          <div class="label-line"></div>
+        </div>
+
+        <div class="data-nodes">
+          <div class="data-node featured">
+            <div class="node-indicator active"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Ph.D. in Computer Science</h3>
+                  <p class="node-subtitle">Colorado School of Mines</p>
+                  <p class="node-meta">GPA: 4.0</p>
+                  <div class="achievement-node has-tooltip">
+                    <span class="achievement-icon">★</span>
+                    ICR, Inc. C-MAPP Research Scholar
+                    <span class="achievement-count">×2</span>
+                    <div class="achievement-tooltip">
+                      <h4>ICR, Inc. C-MAPP Research Scholar</h4>
+                      <p>Scholarship awarded to top Computer Science students at Mines. Won in 2024 & 2025.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label">ACTIVE</span>
+                  <span class="ts-value">Aug. 2024 — Present</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Simultaneous Localization and Mapping (SLAM) research focus</li>
+                <li>Developing monocular SLAM systems and outlier-aware data fusion algorithms</li>
+                <li>Creating robust Point Cloud Registration algorithms</li>
+                <li>Managing groups of undergraduate and graduate researchers</li>
+              </ul>
+            </div>
           </div>
-          <nav class="hero-nav">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-          </nav>
+
+          <div class="data-node">
+            <div class="node-indicator complete"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>M.S. Computer Science</h3>
+                  <p class="node-subtitle">Colorado School of Mines</p>
+                  <p class="node-meta">GPA: 3.93</p>
+                  <div class="achievement-node has-tooltip">
+                    <span class="achievement-icon">◆</span>
+                    NSA Cyber Defense Certification
+                    <div class="achievement-tooltip">
+                      <h4>NSA Cyber Defense Certification</h4>
+                      <p>National Security Agency-validated certification in cyber defense and security practices, demonstrating expertise in protecting systems and networks.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label complete">COMPLETE</span>
+                  <span class="ts-value">Aug. 2023 — May 2024</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Focus Area: Machine Learning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="data-node">
+            <div class="node-indicator complete"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>B.S. Computer Science</h3>
+                  <p class="node-subtitle">Colorado School of Mines</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label complete">COMPLETE</span>
+                  <span class="ts-value">Aug. 2020 — May 2023</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Sigma Alpha Epsilon Fraternity</li>
+                <li>Club Baseball</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <div class="decorative-sides right">
-      </div>
-    </div>
+      <section class="data-circuit">
+        <div class="section-label">
+          <span class="label-icon">◇</span>
+          <h2>EXPERIENCE</h2>
+          <div class="label-line"></div>
+        </div>
 
-    <div class="full-width-container">
-      <div class="decorative-sides left">
-        <img src="assets/Blaster.png" alt="Blaster" class="blaster">
-        <img src="assets/mines-snowy.jpg" alt="Snowy Mines Campus" class="mines-campus">
-      </div>
-      
-      <section class="content-section">
-        <h2>Education</h2>
-        
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Ph.D. in Computer Science</h3>
-              <p class="timeline-subtitle">Colorado School of Mines</p>
-              <p class="timeline-location">GPA: 4.0</p>
-              <div class="certificate" onmouseover="showCertificateModal(event, 'icr-modal')" onmouseout="hideCertificateModal()">
-                <i class="fas fa-shield-alt"></i>
-                ICR, Inc. C-MAPP Research Scholar <span class="badge-multiplier">x2</span>
-                <div id="icr-modal" class="certificate-modal">
-                  <h4>ICR, Inc. C-MAPP Research Scholar</h4>
-                  <p>Scholarship awarded to top Computer Science students at Mines. Won in 2024 & 2025.</p>
+        <div class="data-nodes">
+          <div class="data-node featured">
+            <div class="node-indicator active"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Ten One Aerospace</h3>
+                  <p class="node-subtitle">Perception Engineer</p>
+                  <p class="node-meta">Remote</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label">ACTIVE</span>
+                  <span class="ts-value">Apr. 2025 — Present</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Engineering robust on-orbit computer vision systems to enable satellite RPOD missions</li>
+                <li>Leveraging cutting-edge research to solve calibration, simulation, and pose-estimation problems</li>
+              </ul>
+
+              <div class="sub-nodes">
+                <div class="sub-node">
+                  <div class="sub-header">
+                    <p class="node-subtitle">Perception Engineering Intern</p>
+                    <span class="ts-value small">May 2024 — Apr. 2025</span>
+                  </div>
+                  <ul class="node-data">
+                    <li>Conducted radiometric analysis on camera performance degradation and mitigation in orbital environments</li>
+                    <li>Developed satellite flight software for computer vision applications</li>
+                  </ul>
+                </div>
+
+                <div class="sub-node">
+                  <div class="sub-header">
+                    <p class="node-subtitle">Software Engineering Intern</p>
+                    <span class="ts-value small">Summer 2023</span>
+                  </div>
+                  <ul class="node-data">
+                    <li>Developed satellite flight software</li>
+                    <li>Created a dynamic web application, API, and CLI for managing large flight software applications</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <span class="timeline-date">Aug. 2024 -- Present</span>
           </div>
-          <ul class="bullet-list">
-            <li>Simultaneous Localization and Mapping (SLAM) research focus</li>
-            <li>Developing monocular SLAM systems and outlier-aware data fusion algorithms</li>
-            <li>Creating robust Point Cloud Registration algorithms</li>
-            <li>Managing groups of undergraduate and graduate researchers</li>
-          </ul>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">M.S. Computer Science</h3>
-              <p class="timeline-subtitle">Colorado School of Mines</p>
-              <p class="timeline-location">GPA: 3.93</p>
-              <div class="certificate" onmouseover="showCertificateModal(event, 'nsa-modal')" onmouseout="hideCertificateModal()">
-                <i class="fas fa-shield-alt"></i>
-                NSA Cyber Defense Certification
-                <div id="nsa-modal" class="certificate-modal">
-                  <h4>NSA Cyber Defense Certification</h4>
-                  <p>National Security Agency-validated certification in cyber defense and security practices, demonstrating expertise in protecting systems and networks.</p>
+          <div class="data-node">
+            <div class="node-indicator active"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Aria Robotics Lab</h3>
+                  <p class="node-subtitle">Doctoral Researcher</p>
+                  <p class="node-meta">Golden, Colorado</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label">ACTIVE</span>
+                  <span class="ts-value">Aug. 2024 — Present</span>
                 </div>
               </div>
+              <ul class="node-data">
+                <li>Simultaneous Localization and Mapping (SLAM) researcher</li>
+                <li>Managing multiple teams of undergraduate and graduate researchers</li>
+                <li>Conducting monocular SLAM robustness and performance degradation analysis</li>
+                <li>Developing robust LiDAR and Monocular SLAM algorithms</li>
+              </ul>
             </div>
-            <span class="timeline-date">Aug. 2023 -- May 2024</span>
           </div>
-          <ul class="bullet-list">
-            <li>Focus Area: Machine Learning</li>
-          </ul>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">B.S. Computer Science</h3>
-              <p class="timeline-subtitle">Colorado School of Mines</p>
+          <div class="data-node">
+            <div class="node-indicator active"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Colorado School of Mines</h3>
+                  <p class="node-subtitle">Graduate Teaching Assistant</p>
+                  <p class="node-meta">Golden, Colorado</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label">ACTIVE</span>
+                  <span class="ts-value">Aug. 2024 — Present</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>CSCI 507: Computer Vision, Fall 2024 and Fall 2025</li>
+                <li>CSCI 598A: Robotic Mapping and Localization, Spring 2025</li>
+                <li>CSCI 576: Deep Learning, Spring 2026</li>
+              </ul>
             </div>
-            <span class="timeline-date">Aug. 2020 -- May 2023</span>
           </div>
-          <ul class="bullet-list">
-            <li>Sigma Alpha Epsilon Fraternity</li>
-            <li>Club Baseball</li>
-          </ul>
-        </div>
-      </section>
 
-      <div class="decorative-sides right">
-        <img src="assets/Mines-triangle-white.png" alt="Mines logo" class="blaster">
-        <img src="assets/mines-campus.jpg" alt="Mines Campus" class="mines-campus">
-      </div>
-    </div>
-
-    <div class="full-width-container">
-      <div class="decorative-sides left">
-        <img src="assets/TOA-Logo.png" alt="Ten One Aerospace Logo" class="toa-logo">
-        <img src="assets/aria-logo.png" alt="Aria Robotics Logo" class="aria-logo">
-      </div>
-      
-      <section class="content-section">
-        <h2>Experience</h2>
-        
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Ten One Aerospace</h3>
-              <p class="timeline-subtitle">Perception Engineer</p>
-              <p class="timeline-location">Remote</p>
+          <div class="data-node">
+            <div class="node-indicator complete"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Optical Engines Inc.</h3>
+                  <p class="node-subtitle">Software Engineering Intern</p>
+                  <p class="node-meta">Colorado Springs, CO</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label complete">COMPLETE</span>
+                  <span class="ts-value">May 2022 — Aug 2022</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Engineered laser calibration software</li>
+                <li>Extended functionality of in-house CRM webapp</li>
+              </ul>
             </div>
-            <span class="timeline-date">Apr. 2025 -- Present</span>
           </div>
-          <ul class="bullet-list">
-            <li>Engineering robust on-orbit computer vision systems to enable satellite RPOD missions</li>
-            <li>Leveraging cutting-edge research to solve calibration, simulation, and pose-estimation problems</li>
-          </ul>
-          <div class="timeline-subheading">
-            <p class="timeline-subtitle">Perception Engineering Intern</p>
-            <span class="timeline-date">May 2024 -- Apr. 2025</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Conducted radiometric analysis on camera performance degradation and mitigation in orbital environments</li>
-            <li>Developed satellite flight software for computer vision applications</li>
-          </ul>
-          <div class="timeline-subheading">
-            <p class="timeline-subtitle">Software Engineering Intern</p>
-            <span class="timeline-date">Summer 2023</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Developed satellite flight software</li>
-            <li>Created a dynamic web application, API, and CLI for managing large flight software applications</li>
-          </ul>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Aria Robotics Lab</h3>
-              <p class="timeline-subtitle">Doctoral Researcher</p>
-              <p class="timeline-location">Golden, Colorado</p>
+          <div class="data-node">
+            <div class="node-indicator complete"></div>
+            <div class="node-content">
+              <div class="node-header">
+                <div class="header-info">
+                  <h3>Fractyl Development, LLC</h3>
+                  <p class="node-subtitle">Co-Founder, Lead iOS Developer</p>
+                  <p class="node-meta">Parker, CO</p>
+                </div>
+                <div class="timestamp-block">
+                  <span class="ts-label complete">COMPLETE</span>
+                  <span class="ts-value">Nov 2017 — Dec 2021</span>
+                </div>
+              </div>
+              <ul class="node-data">
+                <li>Led a team in developing multiple iOS and Android apps</li>
+                <li>Placed in a national software development competition and three first-place finishes at state-wide software development competitions</li>
+              </ul>
             </div>
-            <span class="timeline-date">August 2024 -- Present</span>
           </div>
-          <ul class="bullet-list">
-            <li>Simultaneous Localization and Mapping (SLAM) researcher</li>
-            <li>Managing multiple teams of undergraduate and graduate researchers</li>
-            <li>Conducting monocular SLAM robustness and performance degradation analysis</li>
-            <li>Developing robust LiDAR and Monocular SLAM algorithms</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Colorado School of Mines</h3>
-              <p class="timeline-subtitle">Graduate Teaching Assistant</p>
-              <p class="timeline-location">Golden, Colorado</p>
-            </div>
-            <span class="timeline-date">August 2024 -- Present</span>
-          </div>
-          <ul class="bullet-list">
-            <li>CSCI 507: Computer Vision, Fall 2024 and Fall 2025</li>
-            <li>CSCI 598A: Robotic Mapping and Localization, Spring 2025</li>
-            <li>CSCI 576: Deep Learning, Spring 2026</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Optical Engines Inc.</h3>
-              <p class="timeline-subtitle">Software Engineering Intern</p>
-              <p class="timeline-location">Colorado Springs, CO</p>
-            </div>
-            <span class="timeline-date">May 2022 -- Aug 2022</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Engineered laser calibration software</li>
-            <li>Extended functionality of in-house CRM webapp</li>
-          </ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">Fractyl Development, LLC</h3>
-              <p class="timeline-subtitle">Co-Founder, Lead iOS Developer</p>
-              <p class="timeline-location">Parker, CO</p>
-            </div>
-            <span class="timeline-date">Nov 2017 -- Dec 2021</span>
-          </div>
-          <ul class="bullet-list">
-            <li>Led a team in developing multiple iOS and Android apps</li>
-            <li>Placed in a national software development competition and three first-place finishes at state-wide software development competitions</li>
-          </ul>
         </div>
       </section>
-
-      <div class="decorative-sides right">
-        <img src="assets/optical-engines-logo.webp" alt="Optical Engines Logo" class="oe-logo">
-        <img src="assets/fractyl-dev-logo.png" alt="Fractyl-Dev Logo" class="fd-logo">
-      </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2024 Carson Cramer. All rights reserved.</p>
+    <div class="footer-circuit">
+      <p>&copy; 2024 Carson Cramer. All rights reserved.</p>
+      <div class="footer-pulse">
+        <span class="pulse-dot"></span>
+        <span class="pulse-dot"></span>
+        <span class="pulse-dot"></span>
+      </div>
+    </div>
   </footer>
-  
-  <script src="script.js"></script>
 </body>
 </html>
